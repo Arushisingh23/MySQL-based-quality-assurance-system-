@@ -134,7 +134,7 @@ mysql -u root -p enterprise_archive < validation/04_performance_checks.sql
 
 ---
 
-## Key Concepts Demonstrated
+## Concepts Demonstrated
 
 - **View validation methodology** — systematic checks before deploying SQL into production
 - **LEFT JOIN vs INNER JOIN awareness** — understanding which join type silently drops records
@@ -143,18 +143,5 @@ mysql -u root -p enterprise_archive < validation/04_performance_checks.sql
 - **Financial reconciliation** — cross-checking invoice totals against computed line item sums
 - **Index strategy** — covering indexes for FK columns, filter columns, and composite patterns
 - **EXPLAIN plan reading** — verifying no full table scans on large joins
-
----
-
-## Relevance to Enterprise Archiving
-
-In legacy system decommissioning (e.g. SAP ERP archiving), this type of validation framework is applied before migrating data into archive databases to ensure:
-
-1. No business-critical records are lost during the archive extraction
-2. All relationships between header and detail tables are preserved
-3. Financial figures in the archive match the source system exactly
-4. Queries against the archive perform within acceptable SLA limits
-
----
 
  
