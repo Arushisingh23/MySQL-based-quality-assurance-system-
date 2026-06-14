@@ -157,4 +157,4 @@ In legacy system decommissioning (e.g. SAP ERP archiving), this type of validati
 
 ---
 
-*Built as part of a MySQL view validation and quality assurance portfolio.*
+ 
